@@ -4,4 +4,4 @@ stages:
 test:
   stage: test
   script:
-    - echo "Real Success"
+    - echo "Real Success!"

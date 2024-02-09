@@ -63,3 +63,14 @@ https://aws.amazon.com/fr/blogs/containers/deploying-and-scaling-apache-kafka-on
 new comment for feature branch
 
 
+Run /home/runner/work/_actions/wangchucheng/git-repo-sync/v0.1.0/entrypoint.sh
+  /home/runner/work/_actions/wangchucheng/git-repo-sync/v0.1.0/entrypoint.sh
+  shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+  env:
+    INPUT_TARGET_URL: 
+    INPUT_TARGET_USERNAME: 
+    INPUT_TARGET_TOKEN: 
+    GITHUB_EVENT_REF: refs/heads/main
+fatal: unable to access 'https:///': URL using bad/illegal format or missing URL
+
+

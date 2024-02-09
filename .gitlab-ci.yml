@@ -4,4 +4,4 @@ stages:
 test:
   stage: test
   script:
-    - echo "Another Try"
+    - echo "Sync and launch GL pipeline Try"

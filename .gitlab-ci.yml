@@ -4,4 +4,4 @@ stages:
 test:
   stage: test
   script:
-    - echo "Sync and launch GL pipeline Try"
+    - echo "Use of a GH Action to sync to GL"

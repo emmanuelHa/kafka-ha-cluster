@@ -4,4 +4,4 @@ stages:
 test:
   stage: test
   script:
-    - echo "A Try"
+    - echo "Another Try"

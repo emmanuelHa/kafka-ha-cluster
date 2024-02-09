@@ -26,7 +26,7 @@ jobs:
       - name: Mirror + trigger CI
         uses: SvanBoxel/gitlab-mirror-and-ci-action@0.5
         with:
-          args: "https://gitlab.com/<namespace>/<repository>"
+          args: "https://gitlab.com/emmanuelharel/kafka-ha-cluster"
         env:
           FOLLOW_TAGS: "false"
           FORCE_PUSH: "false"

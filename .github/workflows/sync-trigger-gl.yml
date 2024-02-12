@@ -17,7 +17,7 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
+    # The type of runner that the job will run on  
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
@@ -26,13 +26,13 @@ jobs:
       - name: Mirror + trigger CI
         uses: SvanBoxel/gitlab-mirror-and-ci-action@master
         with:
-        args: "https://gitlab.com/<namespace>/<repository>"
-        env:
-        FOLLOW_TAGS: "false"
-        FORCE_PUSH: "false"
-        GITLAB_HOSTNAME: "gitlab.com"
-        GITLAB_USERNAME: "svboxel"
-        GITLAB_PASSWORD: ${{ secrets.DEPLOY_ACCESS_TOKEN }} // Generate here: 
-        GITLAB_PROJECT_ID: "54773143"
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          args: "https://gitlab.com/<namespace>/<repository>"
+          env:
+          FOLLOW_TAGS: "false"
+          FORCE_PUSH: "false"
+          GITLAB_HOSTNAME: "gitlab.com"
+          GITLAB_USERNAME: "svboxel"
+          GITLAB_PASSWORD: ${{ secrets.DEPLOY_ACCESS_TOKEN }}
+          GITLAB_PROJECT_ID: "54773143"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

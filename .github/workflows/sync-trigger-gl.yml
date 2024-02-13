@@ -31,7 +31,7 @@ jobs:
           FOLLOW_TAGS: "false"
           FORCE_PUSH: "false"
           GITLAB_HOSTNAME: "gitlab.com"
-          GITLAB_USERNAME: "svboxel"
+          GITLAB_USERNAME: "emmanuelharel"
           GITLAB_PASSWORD: ${{ secrets.DEPLOY_ACCESS_TOKEN }}
           GITLAB_PROJECT_ID: "54773143"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

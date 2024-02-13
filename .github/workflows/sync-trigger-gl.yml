@@ -27,7 +27,7 @@ jobs:
         uses: SvanBoxel/gitlab-mirror-and-ci-action@master
         with:
           args: "https://gitlab.com/<namespace>/<repository>"
-          env:
+        env:
           FOLLOW_TAGS: "false"
           FORCE_PUSH: "false"
           GITLAB_HOSTNAME: "gitlab.com"

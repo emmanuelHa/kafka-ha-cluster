@@ -1,7 +1,17 @@
 stages:
   - test
+  - deploy
 
 test:
   stage: test
   script:
     - echo "Use of a GH Action to sync to GL"
+
+deploy:
+  image:
+    name: bitnami/kubectl:latest
+    entrypoint: ['']
+  script:
+    - kubectl config get-contexts
+    - kubectl config use-context emmanuelharel/k8s-connection:k8s-connection
+    - kubectl get pods

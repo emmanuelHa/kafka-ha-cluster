@@ -1,0 +1,3 @@
+ci_access:
+  projects:
+    - id: emmanuelharel/kafka-ha-cluster

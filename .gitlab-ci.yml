@@ -1,18 +1,8 @@
 stages:
   - init
-  - deploy
 
 job1:
   stage: init
   script:
     - echo "About to interact with Kube cluster"
-
-job2:
-  stage: deploy
-  image:
-    name: bitnami/kubectl:latest
-    entrypoint: ['']
-  script:
-    - kubectl config get-contexts
-    - kubectl config use-context emmanuelharel/k8s-connection:k8s-connection
-    - kubectl get pods
+    

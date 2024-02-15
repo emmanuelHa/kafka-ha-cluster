@@ -1,11 +1,11 @@
 stages:
-  - test
+  - init
   - deploy
 
 test:
-  stage: test
+  stage: init
   script:
-    - echo "Use of a GH Action to sync to GL"
+    - echo "About to interact with Kube cluster"
 
 deploy:
   image:

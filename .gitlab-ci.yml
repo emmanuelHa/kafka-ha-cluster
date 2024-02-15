@@ -2,12 +2,12 @@ stages:
   - init
   - deploy
 
-test:
+job1:
   stage: init
   script:
     - echo "About to interact with Kube cluster"
 
-deploy:
+job2:
   image:
     name: bitnami/kubectl:latest
     entrypoint: ['']
